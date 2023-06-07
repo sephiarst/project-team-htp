@@ -14,10 +14,10 @@ foreach ($akun as $rows){
 $no++;
 ?>
 <tr>
-    <td><?php echo $no ?></td>
-    <td><?php echo $rows->nomor_perkiraan ?></td>
-    <td><?php echo $rows->nama_perkiraan ?></td>
-    <td><?php echo $rows->kelompok ?></td>
+    <td>{{ $no }}</td>
+    <td>{{ $rows->nomor_perkiraan }}</td>
+    <td>{{ $rows->nama_perkiraan }}</td>
+    <td>{{ $rows->kelompok }}</td>
     <td>
         <a href="{{ asset('akun/edit/'.$rows->id ) }}">Edit</a>
         <a href="{{ asset('akun/delete/'.$rows->id ) }}">Del</a>
