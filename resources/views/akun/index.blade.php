@@ -1,4 +1,4 @@
-<h1>Master Akun</h1>
+<h1>Master data akun</h1>
 <a href="{{ asset('akun/tambah')  }}">Tambah Data</a>
 <table border="1" width="75%">
  <tr style="background:black;color:white">
