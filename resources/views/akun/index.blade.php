@@ -6,6 +6,7 @@
     <td>Nomor Perkiaraan</td>
     <td>Nama Perkiraan</td>
     <td>Kelompok</td>
+    <td>Keterangan</td>
     <td>Aksi</td>
  </tr>   
 <?php 
@@ -18,6 +19,7 @@ $no++;
     <td>{{ $rows->nomor_perkiraan }}</td>
     <td>{{ $rows->nama_perkiraan }}</td>
     <td>{{ $rows->kelompok }}</td>
+    <td>&nbsp;</td>
     <td>
         <a href="{{ asset('akun/edit/'.$rows->id ) }}">Edit</a>
         <a href="{{ asset('akun/delete/'.$rows->id ) }}">Del</a>
