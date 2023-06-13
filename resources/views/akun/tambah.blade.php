@@ -4,5 +4,6 @@
 Nomor Akun <input type="text" name="nomor_perkiraan"><br>
 Nama Perkiraan <input type="text" name="nama_perkiraan"><br>
 Kelompok <input type="text" name="kelompok"><br>
+Tipe <input type="text" name="tipe"><br>
 <input type="submit" value="Simpan">
 </form>     
