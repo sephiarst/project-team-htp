@@ -27,11 +27,11 @@ Route::get('kelompok', 'App\Http\Controllers\kevin\KelompokController@index');
 
 Route::get('jadwal', 'App\Http\Controllers\JadwalController@index');
 
-require('galehludi.php');
+Route::get('views_yosi', 'App\Http\Controllers\ControllerYosi@index');
+Route::get('views_yosi/tambah_yosi', 'App\Http\Controllers\ControllerYosi@tambah_yosi');
+Route::post('views_yosi/tambah_proses_yosi', 'App\Http\Controllers\ControllerYosi@tambah_proses_yosi');
+Route::get('views_yosi/edit_yosi/{id}', 'App\Http\Controllers\ControllerYosi@edit_yosi');
+Route::post('views_yosi/edit_proses_yosi', 'App\Http\Controllers\ControllerYosi@edit_proses_yosi');
+Route::get('views_yosi/delete_yosi/{id}', 'App\Http\Controllers\ControllerYosi@delete_yosi');
 
-Route::get('abari_akun', 'App\Http\Controllers\AbariAkunController@index');
-Route::get('abari_akun/tambah','App\Http\Controllers\AbariAkunController@tambah');
-Route::post('abari_akun/tambah_proses','App\Http\Controllers\AbariAkunController@tambah_proses');
-Route::get('abari_akun/edit/{id}','App\Http\Controllers\AbariAkunController@edit');
-Route::post('abari_akun/edit_proses','App\Http\Controllers\AbariAkunController@edit_proses');
-Route::get('abari_akun/delete/{id}','App\Http\Controllers\AbariAkunController@delete');
+require('galehludi.php');
