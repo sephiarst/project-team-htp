@@ -27,16 +27,12 @@ Route::get('kelompok', 'App\Http\Controllers\kevin\KelompokController@index');
 
 Route::get('jadwal', 'App\Http\Controllers\JadwalController@index');
 
-<<<<<<< Updated upstream
 Route::get('views_yosi', 'App\Http\Controllers\ControllerYosi@index');
 Route::get('views_yosi/tambah_yosi', 'App\Http\Controllers\ControllerYosi@tambah_yosi');
 Route::post('views_yosi/tambah_proses_yosi', 'App\Http\Controllers\ControllerYosi@tambah_proses_yosi');
 Route::get('views_yosi/edit_yosi/{id}', 'App\Http\Controllers\ControllerYosi@edit_yosi');
 Route::post('views_yosi/edit_proses_yosi', 'App\Http\Controllers\ControllerYosi@edit_proses_yosi');
 Route::get('views_yosi/delete_yosi/{id}', 'App\Http\Controllers\ControllerYosi@delete_yosi');
-=======
-require('galehludi.php');
-require('dika.php');
->>>>>>> Stashed changes
 
 require('galehludi.php');
+require('dika.php');
