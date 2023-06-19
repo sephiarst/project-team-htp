@@ -11,7 +11,7 @@
                         <tr>
                             <th class="border border-slate-600 px-2 py-1">No</th>
                             <th class="border border-slate-600 px-2 py-1">Nomor Jurnal</th>
-                            <th class="border border-slate-600 px-2 py-1">Kode Jurnla</th>
+                            <th class="border border-slate-600 px-2 py-1">Kode Jurnal</th>
                             <th class="border border-slate-600 px-2 py-1">Tanggal Selesai</th>
                         </tr>
                     </thead>
