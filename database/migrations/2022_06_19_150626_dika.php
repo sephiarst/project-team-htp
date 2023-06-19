@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('t_kelompok', function (Blueprint $table) {
-            $table->integer('id_kelompok, 12')->primary();
-            $table->string('Kelompok', '25');
-            $table->timestamps();
+        Schema::create('dikatabel_akuntansi_jurnal_masuk', function (Blueprint $table) {
+            $table->integer('nomor_jurnal')->autoIncrement();
+            $table->string('kode_jurnal', '15');
+            $table->date('tanggal_selesai');
         });
     }
 
@@ -23,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('t_kelompok');
+        Schema::dropIfExists('dikatabel_akuntansi_jurnal_masuk');
     }
 };
