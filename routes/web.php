@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,6 +25,8 @@ Route::get('akun/edit/{id}', 'App\Http\Controllers\AkunController@edit');
 Route::post('akun/edit_proses', 'App\Http\Controllers\AkunController@edit_proses');
 Route::get('akun/delete/{id}', 'App\Http\Controllers\AkunController@delete');
 Route::get('kelompok', 'App\Http\Controllers\kevin\KelompokController@index');
+
+Route::get('akuntansitransaksi', 'App\Http\Controllers\akuntansitransaksiController@index');
 
 Route::get('jadwal', 'App\Http\Controllers\JadwalController@index');
 
