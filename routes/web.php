@@ -28,6 +28,8 @@ Route::get('kelompok', 'App\Http\Controllers\kevin\KelompokController@index');
 
 Route::get('akuntansitransaksi', 'App\Http\Controllers\akuntansitransaksiController@index');
 
+Route::get('supplier', 'App\Http\Controllers\ControllerSupplier@index');
+
 Route::get('jadwal', 'App\Http\Controllers\JadwalController@index');
 
 Route::get('views_yosi', 'App\Http\Controllers\ControllerYosi@index');
