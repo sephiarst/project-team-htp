@@ -31,12 +31,8 @@ Route::get('akuntansitransaksi', 'App\Http\Controllers\akuntansitransaksiControl
 Route::get('supplier', 'App\Http\Controllers\ControllerSupplier@index');
 
 Route::get('jadwal', 'App\Http\Controllers\JadwalController@index');
-<<<<<<< Updated upstream
-Route::get('indukuser', 'App\Http\Controllers\ControllerIndukUser@index');
 
-=======
-Route::get('djurnal', 'App\Http\Controllers\ControllerDjurnal@index');
->>>>>>> Stashed changes
+Route::get('indukuser', 'App\Http\Controllers\ControllerIndukUser@index');
 
 Route::get('views_yosi', 'App\Http\Controllers\ControllerYosi@index');
 Route::get('views_yosi/tambah_yosi', 'App\Http\Controllers\ControllerYosi@tambah_yosi');
