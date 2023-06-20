@@ -29,6 +29,8 @@ Route::get('kelompok', 'App\Http\Controllers\kevin\KelompokController@index');
 Route::get('akuntansitransaksi', 'App\Http\Controllers\akuntansitransaksiController@index');
 
 Route::get('jadwal', 'App\Http\Controllers\JadwalController@index');
+Route::get('indukuser', 'App\Http\Controllers\ControllerIndukUser@index');
+
 
 Route::get('views_yosi', 'App\Http\Controllers\ControllerYosi@index');
 Route::get('views_yosi/tambah_yosi', 'App\Http\Controllers\ControllerYosi@tambah_yosi');
