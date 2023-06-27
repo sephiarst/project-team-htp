@@ -32,8 +32,18 @@
 
                 
                 <li class="nav-item">
-                <a class="nav-link {{ request()->segment('1') =='guru'  ? 'active' : '' }}" aria-current="page" href="{{ url('periode') }}">
-                <i class="fas fa-user"></i> Master Periode</a>
+                <a class="nav-link {{ request()->segment('1') =='supplier'  ? 'active' : '' }}" aria-current="page" href="{{ url('supplier') }}">
+                <i class="fas fa-ban"></i> Master Periode</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link {{ request()->segment('1') =='supplier'  ? 'active' : '' }}" aria-current="page" href="{{ url('supplier') }}">
+                <i class="fas fa-plus"></i> Master Supplier</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link {{ request()->segment('1') =='supplier'  ? 'active' : '' }}" aria-current="page" href="{{ url('supplier') }}">
+                <i class="fas fa-download"></i> Jurnal Umum</a>
                 </li>
 
             </ul>

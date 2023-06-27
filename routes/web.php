@@ -26,7 +26,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('layout.main');
 // });
 
-Route::get('/', 'App\Http\Controllers\akuntansitransaksiController@index');
+Route::get('/', 'App\Http\Controllers\AkunController@index');
+Route::get('/akuntransaksi', 'App\Http\Controllers\akuntansitransaksiController@index');
 Route::get('/home', 'App\Http\Controllers\AkunController@index');
 Route::get('akun', 'App\Http\Controllers\AkunController@index');
 Route::get('akun/tambah', 'App\Http\Controllers\AkunController@tambah');
