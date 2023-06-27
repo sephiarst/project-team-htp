@@ -1,6 +1,11 @@
-<h1>Transaksi</h1>
+@extends('layout.main')
+@section('content')
 
-<table border="1" width="75%">
+<h1>Transaksi</h1>
+<div class="card">
+<div class="card-header">
+<table class="table table-sm table-stripped table-bordered">
+    <thead>
  <tr style="background:black;color:white">
     <td>No</td>
     <td>Kode Jurnal</td>
@@ -14,7 +19,10 @@
     <td>Tanggal Posting</td>
     <td>Keterangan Posting</td>
     
- </tr>   
+ </tr>  
+ </thead>
+
+<tbody> 
 <?php 
 $no=0;
 foreach ($akuntansitransaksi as $rows){
@@ -41,4 +49,8 @@ $no++;
 <?php 
 }
 ?>
+ </tbody>
 </table>
+</div>
+</div>
+@endsection
