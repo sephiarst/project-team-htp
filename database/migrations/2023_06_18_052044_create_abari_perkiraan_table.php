@@ -12,24 +12,24 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('abari_perkiraan', function (Blueprint $table) {
-            $table->integer('PerkiraanID', 10);
+            $table->id('PerkiraanID');
             $table->string('NomorPerkiraan', 6);
             $table->string('NamaPerkiraan', 30);
             $table->string('tipe', 7);
             $table->string('induk', 5);
-            $table->integer('level', 10);
+            $table->integer('level');
             $table->string('Kelompok', 10);
             $table->string('normal', 10);
-            $table->bigInteger('awal_debet', 19);
-            $table->bigInteger('awal_kredit', 19);
-            $table->bigInteger('mut_debet', 19);
-            $table->bigInteger('mut_kredit', 19);
-            $table->bigInteger('sisa_debet', 19);
-            $table->bigInteger('sisa_kredit', 19);
-            $table->bigInteger('rl_debet', 19);
-            $table->bigInteger('rl_kredit', 19);
-            $table->bigInteger('nrc_debet', 19);
-            $table->bigInteger('nrc_kredit', 19);
+            $table->bigInteger('awal_debet');
+            $table->bigInteger('awal_kredit');
+            $table->bigInteger('mut_debet');
+            $table->bigInteger('mut_kredit');
+            $table->bigInteger('sisa_debet');
+            $table->bigInteger('sisa_kredit');
+            $table->bigInteger('rl_debet');
+            $table->bigInteger('rl_kredit');
+            $table->bigInteger('nrc_debet');
+            $table->bigInteger('nrc_kredit');
         });
     }
 
