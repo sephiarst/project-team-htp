@@ -12,15 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('abari_tabel_akuntansi_transaksi', function (Blueprint $table) {
-            $table->id('id_transaksi');
+            $table->integer('id_transaksi', 10);
             $table->string('kode_jurnal', 15);
             $table->string('nomor_perkiraan', 10);
             $table->string('tanggal_transaksi', 12);
             $table->string('bulan_transaksi', 20);
             $table->string('jenis_transaksi', 15);
             $table->text('keterangan_transaksi');
-            $table->bigInteger('debet');
-            $table->bigInteger('kredit');
+            $table->bigInteger('debet', 19);
+            $table->bigInteger('kredit', 19);
             $table->string('tanggal_posting', 12);
             $table->string('keterangan_posting', 10);
             $table->string('id_user', 10);

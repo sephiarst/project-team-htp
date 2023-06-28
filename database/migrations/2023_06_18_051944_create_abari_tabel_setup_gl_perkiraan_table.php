@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('abari_tabel_setup_gl_perkiraan', function (Blueprint $table) {
-            $table->id('id_setup');
+            $table->integer('id_setup', 10);
             $table->string('aktiva_lancar', 11);
             $table->string('hutang_lancar', 11);
             $table->string('modal_sendiri', 11);
