@@ -26,7 +26,8 @@ class AkunController extends Controller
         ->insert([
             'nomor_perkiraan'  =>  $request->nomor_perkiraan,
             'nama_perkiraan'  =>  $request->nama_perkiraan,
-            'kelompok'  =>  $request->kelompok
+            'kelompok'  =>  $request->kelompok,
+            'tipe'  =>  $request->tipe
         ]);
         return redirect('akun');
     }

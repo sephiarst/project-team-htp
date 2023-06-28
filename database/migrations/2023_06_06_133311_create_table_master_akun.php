@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('nomor_perkiraan', '15');
             $table->string('nama_perkiraan', '45');
             $table->string('kelompok', '45');
+            $table->string('tipe', '45');
             $table->timestamps();
         });
     }

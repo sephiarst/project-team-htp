@@ -1,13 +1,23 @@
-<h1>Master Akun</h1>
+@extends('layout.main')
+@section('content')
+
+<h1>Master data akun</h1>
+<div class="card">
+<div class="card-header">
 <a href="{{ asset('akun/tambah')  }}">Tambah Data</a>
-<table border="1" width="75%">
+<table class="table table-sm table-stripped table-bordered">
+    <thead>
  <tr style="background:black;color:white">
     <td>No</td>
     <td>Nomor Perkiaraan</td>
     <td>Nama Perkiraan</td>
     <td>Kelompok</td>
+    <td>Tipe</td>
     <td>Aksi</td>
- </tr>   
+ </tr> 
+ </thead>
+
+    <tbody>  
 <?php 
 $no=0;
 foreach ($akun as $rows){
@@ -18,6 +28,7 @@ $no++;
     <td>{{ $rows->nomor_perkiraan }}</td>
     <td>{{ $rows->nama_perkiraan }}</td>
     <td>{{ $rows->kelompok }}</td>
+    <td>{{ $rows->tipe }}</td>
     <td>
         <a href="{{ asset('akun/edit/'.$rows->id ) }}">Edit</a>
         <a href="{{ asset('akun/delete/'.$rows->id ) }}">Del</a>
@@ -26,4 +37,8 @@ $no++;
 <?php 
 }
 ?>
+ </tbody>
 </table>
+</div>
+</div>
+@endsection
