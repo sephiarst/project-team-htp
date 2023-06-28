@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('abari_tabel_akuntansi_history_backup', function (Blueprint $table) {
-            $table->id('id_backup');
+            $table->integer('id_backup', 10);
             $table->string('nama_file', 50);
             $table->string('tanggal_backup', 20);
             $table->string('id_user', 20);
