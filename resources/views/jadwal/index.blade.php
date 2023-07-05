@@ -1,8 +1,5 @@
-@extends('layout.main2')
-@section('content')
-
 <h1>Jadwal Kuliah</h1>
-<table class="table table-sm table-stripped table-bordered">
+<table border="1" width="75%">
 <tr>
     <td>No</td>
     <td>Nama Dosen</td>
@@ -25,4 +22,3 @@ $no++;
 ?>
 
 </table>
-@endsection

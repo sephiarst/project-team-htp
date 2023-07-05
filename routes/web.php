@@ -61,4 +61,3 @@ Route::get('abari_akun/delete/{id}','App\Http\Controllers\AbariAkunController@de
 
 require('galehludi.php');
 require('dika.php');
-require('sephiarst.php');
